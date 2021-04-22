@@ -1,0 +1,232 @@
+*{box-sizing: border-box;}
+@font-face {
+  font-family: Clairvaux;
+  src: ./assets/Clairvaux-Roman.ttf;
+}
+
+p {
+  color: black;
+   font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 10%;
+  padding: 0%;
+}
+
+img {
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+   height: 100%;
+   /* outline-color: black;
+   outline-style: groove; */
+}
+
+body{
+  margin:0;
+  padding: 0;
+  background-color: white;
+  color: gray;
+  font-family: Clairvaux;
+  font-size: 20px;
+  padding: 0%;
+}
+
+.float-container{
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+   height: 100%;
+  top:10px;
+  width: 510px;
+  /* outline-style: dotted;
+  outline-color: purple; */
+}
+.drawing{
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+}
+
+.topright{
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+}
+.bottomright{
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+}
+.topleft{
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+}
+.bottomleft{
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+}
+
+.rightbrain{
+  width: 255px;
+  height: 50%;
+  /* outline-style: solid; */
+  /* outline-color: red; */
+  position: absolute;
+  top: 0px;
+}
+
+.lefttbrain{
+  width: 255px;
+  height: 50%;
+  /* outline-style: solid; */
+  /* outline-color: green; */
+  position: absolute;
+  top: 0px;
+  left: 50%;
+}
+
+.lefttbrain .life {
+  visibility: hidden;
+  width: 500px;
+  text-align: left;
+  border-radius: 6px;
+  padding: 0px 0;
+  position: absolute;
+  left: 110%;
+  z-index: 4;
+}
+
+.lefttbrain:hover .life{
+  visibility: visible;
+}
+
+.lowerright{
+  width: 255px;
+  height: 50%;
+  /* outline-style: solid; */
+  /* outline-color: yellow; */
+  position: absolute;
+  top: 50%;
+}
+
+
+.lowerleft{
+  width: 255px;
+  height: 50%;
+  /* outline-style: solid; */
+  /* outline-color: blue; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.lowerleft .spotify {
+  visibility: hidden;
+  width: 500px;
+  text-align: left;
+  border-radius: 6px;
+  padding: 0px 0;
+  position: absolute;
+  left: 110%;
+  z-index: 5;
+}
+
+.lowerleft:hover .spotify{
+  visibility: visible;
+}
+
+.circle1{
+    radius: 10px;
+    background-color: black;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: 33%;
+    left: 33.3%;
+    z-index: 50;
+    border-radius: 50%;
+  }
+  .circle1 .life {
+    visibility: hidden;
+    width: 500px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 0px 0;
+    position: absolute;
+    right: -400px;
+    z-index: 3;
+    font-size: 60%;
+  }
+
+  .circle1:hover .life{
+    visibility: visible;
+  }
+
+
+.circle2{
+  radius: 10px;
+  background-color: yellow;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  top: 77.3%;
+  left: 33.2%;
+  z-index: 50;
+  border-radius: 50%;
+}
+
+.circle3{
+    radius: 10px;
+    background-color: black;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: 77.8%;
+    left: 71.2%;
+    z-index: 50;
+    border-radius: 50%;
+  }
+  .circle3 .spotify {
+    visibility: hidden;
+    width: 500px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 0px 0;
+    position: absolute;
+    left: 90%;
+    z-index: 3;
+    font-size: 60%;
+
+  }
+
+  .circle3:hover .spotify{
+    visibility: visible;
+  }
+
+.circle4{
+    radius: 10px;
+    background-color: black;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: 21.5%;
+    left: 74.7%;
+    z-index: 50;
+    border-radius: 50%;
+  }
+  .circle4 .youtube {
+    visibility: hidden;
+    width: 500px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 0px 0;
+    position: absolute;
+    left: 90%;
+    z-index: 3;
+    font-size: 60%;
+  }
+
+  .circle4:hover .youtube{
+    visibility: visible;
+  }
